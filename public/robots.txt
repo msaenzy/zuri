@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://zuridentkids.github.io/zurident-kids-web/sitemap.xml

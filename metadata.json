@@ -1,0 +1,6 @@
+{
+  "name": "Zurident Kids",
+  "description": "Landing page de la clínica de odontopediatría Zurident Kids de la Dra. Estefanía Zurita Pozo en Santo Domingo de los Tsáchilas, Ecuador.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

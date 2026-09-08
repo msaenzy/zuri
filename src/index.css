@@ -1,0 +1,60 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand-blue: #1580C4;
+  --color-brand-pink: #EC1E7C;
+  --color-brand-yellow: #FFC629;
+  --color-brand-mint: #3CB878;
+  --color-brand-dark: #1C2B39;
+  --color-brand-light: #F3FAFF;
+
+  --font-heading: "Fredoka", cursive, sans-serif;
+  --font-sans: "Nunito", sans-serif;
+}
+
+@layer base {
+  body {
+    font-family: var(--font-sans);
+    color: var(--color-brand-dark);
+    background-color: #FFFFFF;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-heading);
+  }
+}
+
+/* Custom marquee keyframes for continuous testimonial scroll */
+@keyframes infinite-scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-infinite-scroll {
+  display: flex;
+  width: max-content;
+  animation: infinite-scroll 35s linear infinite;
+}
+
+.animate-infinite-scroll:hover {
+  animation-play-state: paused;
+}
+
+/* Pulse animation for Pepito and fun details */
+@keyframes gentle-bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-6px);
+  }
+}
+
+.animate-gentle-bounce {
+  animation: gentle-bounce 3s ease-in-out infinite;
+}
+
